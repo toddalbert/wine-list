@@ -8,19 +8,18 @@ export default function WineList() {
       .then(setTheWines)
       .catch(alert)
   }
-  console.log({theWines})
   return (
-    <>
+    <section className='wine-list'>
       {!theWines ? (
         <button onClick={getWines}>Load Wines...</button>
       ) : (
         theWines.map(wine => (
-          <div>
+          <div className='wine-card'>
             <h2>{wine.wine}</h2>
             <img src={wine.image} alt={wine.winery + ' ' + wine.wine} />
           </div>
         ))
       )}
-    </>
+    </section>
   )
 }

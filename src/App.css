@@ -4,5 +4,24 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  text-align: center;
+}
+
+.wine-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.wine-card {
+  width: 300px;
+  text-align: center;
+}
+
+.wine-card img {
+  max-width: 70%;
+  height: 300px;
 }
